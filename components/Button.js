@@ -15,7 +15,7 @@ export default function Button({label,theme,onPress}){
   if(theme ==="secondary"){
     return(
         <View style={[styles.buttonContainer,{borderRadius: 18, borderWidth:3, borderColor: "#FF00FF"}]}>
-            <Pressable style={[styles.button, {backgroundColor:"#D8BFD8"}]} onPress={() =>alert('Image Uploaded')}>
+            <Pressable style={[styles.button, {backgroundColor:"#fff"}]} onPress={() =>alert('Image Uploaded')}>
                 <FontAwesome name="upload" size={18} color={"#000000"} style={styles.buttonIcon}/>
                 <Text style={[styles.buttonLabel, {color:"#000000"}]}>{label}</Text>
             </Pressable>
